@@ -1,0 +1,8 @@
+controller:
+  name: infra-nginx-trial
+  extraArgs:
+    ingress-class: nginx
+    watch-ingress-with-annotation-only: "true"
+    ingress-annotation-key: nginx-trial
+  service:
+    externalTrafficPolicy: Cluster
